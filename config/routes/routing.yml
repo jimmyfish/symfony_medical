@@ -1,0 +1,7 @@
+medical_index:
+  path: /
+  controller: App\Controller\UserController:index
+
+medical_auth:
+  resource: 'auth/routing.yml'
+  prefix: /auth

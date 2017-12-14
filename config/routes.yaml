@@ -1,0 +1,7 @@
+#index:
+#    path: /
+#    defaults: { _controller: 'App\Controller\DefaultController::index' }
+
+medical:
+  resource: 'routes/routing.yml'
+  prefix: /

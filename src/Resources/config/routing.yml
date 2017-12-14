@@ -1,0 +1,4 @@
+medical_index:
+  path: /
+  defaults:
+    _controllers: App:User:index
