@@ -1,0 +1,37 @@
+App\Entity\Sampel:
+  type: entity
+  name: sampel
+  id:
+    id:
+      type: integer
+      generator: { strategy: AUTO }
+  manyToOne:
+    idLab:
+      targetEntity: Laboratorium
+      joinColumn:
+        name: id_laboratorium
+        referencedColumnName: id
+  fields:
+    lokasiPengambilan:
+      type: string
+      length: 255
+      name: lokasi_pengambilan
+    alamat:
+      type: string
+      length: 255
+    petugasPengambil:
+      type: string
+      length: 255
+      name: petugas_pengambil
+    tanggal:
+      type: datetime
+    kondisi:
+      type: string
+      length: 255
+    jenisSampel:
+      type: string
+      length: 255
+      name: jenis_sampel
+    parameter:
+      type: string
+      length: 255

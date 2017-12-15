@@ -2,6 +2,10 @@ medical_index:
   path: /
   controller: App\Controller\UserController:index
 
+medical_user_create:
+  path: /user
+  controller: App\Controller\UserController:addUserForm
+
 medical_auth:
   resource: 'auth/routing.yml'
   prefix: /auth

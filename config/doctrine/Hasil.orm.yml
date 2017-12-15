@@ -1,0 +1,22 @@
+App\Entity\Hasil:
+  type: entity
+  name: hasil
+  id:
+    id:
+      type: integer
+      generator: { strategy: AUTO }
+  fields:
+    satuan:
+      type: string
+      length: 100
+    parameter:
+      type: string
+      length: 100
+    metodeAnalisa:
+      type: string
+      length: 255
+      name: metode_analisa
+    bakuMutu:
+      type: string
+      length: 255
+      name: baku_mutu

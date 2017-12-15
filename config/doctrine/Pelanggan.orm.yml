@@ -1,0 +1,15 @@
+App\Entity\Pelanggan:
+  type: entity
+  name: pelanggan
+  id:
+    id:
+      type: integer
+      generator: { strategy: AUTO }
+  fields:
+    nama:
+      type: string
+      length: 255
+    alamat:
+      type: text
+    telepon:
+      type: integer
