@@ -1,0 +1,3 @@
+medical_hasil_create:
+  path: /create
+  controller: App\Controller\HasilController:create

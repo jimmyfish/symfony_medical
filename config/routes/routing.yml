@@ -9,3 +9,23 @@ medical_user_create:
 medical_auth:
   resource: 'auth/routing.yml'
   prefix: /auth
+
+medical_sampel:
+  resource: 'sampel/routing.yml'
+  prefix: /sampel
+
+medical_pelanggan:
+  resource: 'pelanggan/routing.yml'
+  prefix: /pelanggan
+
+medical_hasil:
+  resource: 'hasil/routing.yml'
+  prefix: /hasil
+
+medical_transaksi:
+  resource: 'transaksi/routing.yml'
+  prefix: /transaksi
+
+medical_laboratorium:
+  resource: 'laboratorium/routing.yml'
+  prefix: /lab

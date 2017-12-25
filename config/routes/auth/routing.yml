@@ -1,3 +1,7 @@
 medical_auth_login_index:
   path: /login
   controller: App\Controller\AuthController:login
+
+medical_auth_registration_index:
+  path: /regist
+  controller: App\Controller\AuthController:login

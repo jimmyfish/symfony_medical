@@ -4,13 +4,10 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
-
     <title>Medical v1 - {% block title %}{% endblock %}</title>
-
     <meta name="description" content="Codebase - Bootstrap 4 Admin Template &amp; UI Framework created by pixelcave and published on Themeforest">
     <meta name="author" content="pixelcave">
     <meta name="robots" content="noindex, nofollow">
-
     <!-- Open Graph Meta -->
     <meta property="og:title" content="Codebase - Bootstrap 4 Admin Template &amp; UI Framework">
     <meta property="og:site_name" content="Codebase">
@@ -18,163 +15,209 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="">
     <meta property="og:image" content="">
-
     <!-- Icons -->
     <!-- The following icons can be replaced with your own, they are used by desktop and mobile browsers -->
     <link rel="shortcut icon" href="{{ asset('assets/img/favicons/favicon.png') }}">
     <link rel="icon" type="image/png" sizes="192x192" href="{{ asset('assets/img/favicons/favicon-192x192.png') }}">
     <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('assets/img/favicons/apple-touch-icon-180x180.png') }}">
     <!-- END Icons -->
-
     <!-- Stylesheets -->
     <!-- Codebase framework -->
-    <link rel="stylesheet" id="css-main" href="{{ asset('assets/css/codebase.min.css') }}">
-
+    <link rel="stylesheet" id="css-main" href="{{ asset('assets/css/codebase.css') }}">
     <!-- You can include a specific file from css/themes/ folder to alter the default color theme of the template. eg: -->
     <link rel="stylesheet" id="css-theme" href="{{ asset('assets/css/themes/earth.min.css') }}">
     <!-- END Stylesheets -->
 </head>
 <body>
-<div id="page-container" class="sidebar-o side-scroll page-header-modern main-content-boxed">
-    <nav id="sidebar">
-        <div id="sidebar-scroll">
-            <div class="sidebar-content">
-                <div class="content-header content-header-fullrow px-15">
-                    <div class="content-header-section sidebar-mini-visible-b">
-                        <span class="content-header-item font-w700 font-size-xl float-left animated fadeIn">
-                                    <span class="text-dual-primary-dark">c</span><span class="text-primary">b</span>
-                                </span>
-                    </div>
-
-                    <div class="content-header-section text-center align-parent sidebar-mini-hidden">
-                        <button type="button" class="btn btn-circle btn-dual-secondary d-lg-none align-v-r" data-toggle="layout" data-action="sidebar_close">
+    <div id="page-container" class="sidebar-o side-scroll page-header-modern main-content-boxed">
+        <nav id="sidebar">
+            <div id="sidebar-scroll">
+                <div class="sidebar-content">
+                    <div class="content-header content-header-fullrow px-15">
+                        <div class="content-header-section sidebar-mini-visible-b">
+                            <span class="content-header-item font-w700 font-size-xl float-left animated fadeIn">
+                                <span class="text-dual-primary-dark">c</span><span class="text-primary">b</span>
+                            </span>
+                        </div>
+                        <div class="content-header-section text-center align-parent sidebar-mini-hidden">
+                            <button type="button" class="btn btn-circle btn-dual-secondary d-lg-none align-v-r" data-toggle="layout" data-action="sidebar_close">
                             <i class="fa fa-times text-danger"></i>
-                        </button>
-                        <div class="content-header-item">
-                            <a class="link-effect font-w700" href="{{ path('medical_index') }}">
-                                <i class="si si-fire text-primary"></i>
-                                <span class="font-size-xl text-dual-primary-dark">Med</span><span class="font-size-xl text-primary">ical</span>
-                            </a>
+                            </button>
+                            <div class="content-header-item">
+                                <a class="link-effect font-w700" href="{{ path('medical_index') }}">
+                                    <i class="si si-fire text-primary"></i>
+                                    <span class="font-size-xl text-dual-primary-dark">Med</span><span class="font-size-xl text-primary">ical</span>
+                                </a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="content-side content-side-full content-side-user px-10 align-parent">
-                    <div class="sidebar-mini-visible-b align-v animated fadeIn">
-                        <img class="img-avatar img-avatar32" src="assets/img/avatars/avatar15.jpg" alt="">
+                    <div class="content-side content-side-full content-side-user px-10 align-parent">
+                        <div class="sidebar-mini-visible-b align-v animated fadeIn">
+                            <img class="img-avatar img-avatar32" src="assets/img/avatars/avatar15.jpg" alt="">
+                        </div>
+                        <div class="sidebar-mini-hidden-b text-center">
+                            <a class="img-link" href="be_pages_generic_profile.html">
+                                <img class="img-avatar" src="http://placehold.it/640x480" alt="">
+                            </a>
+                            <ul class="list-inline mt-10">
+                                <li class="list-inline-item">
+                                    <a class="link-effect text-dual-primary-dark font-size-xs font-w600 text-uppercase" href="be_pages_generic_profile.html">Manajer Teknik</a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a class="link-effect text-dual-primary-dark" data-toggle="layout" data-action="sidebar_style_inverse_toggle" href="javascript:void(0)">
+                                        <i class="si si-drop"></i>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a class="link-effect text-dual-primary-dark" href="op_auth_signin.html">
+                                        <i class="si si-logout"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="sidebar-mini-hidden-b text-center">
-                        <a class="img-link" href="be_pages_generic_profile.html">
-                            <img class="img-avatar" src="http://placehold.it/640x480" alt="">
-                        </a>
-                        <ul class="list-inline mt-10">
-                            <li class="list-inline-item">
-                                <a class="link-effect text-dual-primary-dark font-size-xs font-w600 text-uppercase" href="be_pages_generic_profile.html">J. Smith</a>
+                    <div class="content-side content-side-full">
+                        <ul class="nav-main">
+                            <li>
+                                <a href="{{ path('medical_index') }}"><i class="si si-home"></i><span class="sidebar-mini-hide">Beranda</span></a>
                             </li>
-                            <li class="list-inline-item">
-                                <a class="link-effect text-dual-primary-dark" data-toggle="layout" data-action="sidebar_style_inverse_toggle" href="javascript:void(0)">
-                                    <i class="si si-drop"></i>
-                                </a>
+                            <li class="hide">
+                                <a href="{{ path('medical_index') }}"><i class="si si-user"></i><span class="sidebar-mini-hide">Pengguna</span></a>
                             </li>
-                            <li class="list-inline-item">
-                                <a class="link-effect text-dual-primary-dark" href="op_auth_signin.html">
-                                    <i class="si si-logout"></i>
-                                </a>
+                            <li>
+                                <a class="nav-submenu" data-toggle="nav-submenu" href="#"><i class="si si-puzzle"></i><span class="sidebar-mini-hide">STS</span></a>
+                                <ul>
+                                    <li>
+                                        <a href="be_blocks_tiles.html">Tambah Sampel</a>
+                                    </li>
+                                    <li>
+                                        <a href="be_blocks.html">Daftar Sampel</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="">
+                                <a class="nav-submenu" data-toggle="nav-submenu" href="#"><i class="si si-users"></i><span class="sidebar-mini-hide">STR</span></a>
+                                <ul>
+                                    <li>
+                                        <a href="{{ path('medical_pelanggan_create') }}">Tambah Pelanggan</a>
+                                    </li>
+                                    <li>
+                                        <a href="be_blocks.html">Daftar Pelanggan</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="">
+                                <a class="nav-submenu" data-toggle="nav-submenu" href="#"><i class="si si-calculator"></i><span class="sidebar-mini-hide">Hasil</span></a>
+                                <ul>
+                                    <li>
+                                        <a href="{{ path('medical_hasil_create') }}">Tambah Hasil</a>
+                                    </li>
+                                    <li>
+                                        <a href="be_blocks.html">Daftar Hasil</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="hide">
+                                <a class="nav-submenu" data-toggle="nav-submenu" href="#"><i class="si si-users"></i><span class="sidebar-mini-hide">STR</span></a>
+                                <ul>
+                                    <li>
+                                        <a href="{{ path('medical_pelanggan_create') }}">Tambah Pelanggan</a>
+                                    </li>
+                                    <li>
+                                        <a href="be_blocks.html">Daftar Pelanggan</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="hide">
+                                <a class="nav-submenu" data-toggle="nav-submenu" href="#"><i class="si si-book-open"></i><span class="sidebar-mini-hide">Transaksi</span></a>
+                                <ul>
+                                    <li>
+                                        <a href="be_blocks.html">Tambah Transaksi</a>
+                                    </li>
+                                    <li>
+                                        <a href="be_blocks_tiles.html">Daftar Transaksi</a>
+                                    </li>
+                                    <li>
+                                        <a href="be_blocks_draggable.html">Transaksi Lama</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="hide">
+                                <a href="{{ path('medical_index') }}"><i class="si si-vector"></i><span class="sidebar-mini-hide">Laboratorium</span></a>
                             </li>
                         </ul>
                     </div>
                 </div>
-                <div class="content-side content-side-full">
-                    <ul class="nav-main">
-                        <li>
-                            <a href="{{ path('medical_index') }}"><i class="si si-home"></i><span class="sidebar-mini-hide">Beranda</span></a>
-                        </li>
-                    </ul>
-                </div>
             </div>
-        </div>
-    </nav>
-
-    <header id="page-header">
-
-        <div class="content-header">
-
-            <div class="content-header-section">
-
-                <button type="button" class="btn btn-circle btn-dual-secondary" data-toggle="layout" data-action="sidebar_toggle">
+        </nav>
+        <header id="page-header">
+            <div class="content-header">
+                <div class="content-header-section">
+                    <button type="button" class="btn btn-circle btn-dual-secondary" data-toggle="layout" data-action="sidebar_toggle">
                     <i class="fa fa-navicon"></i>
-                </button>
-
-
-            </div>
-            <div class="content-header-section">
-                <div class="btn-group" role="group">
-                    <button type="button" class="btn btn-rounded btn-dual-secondary" id="page-header-user-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <i class="fa fa-angle-down ml-5"></i>
                     </button>
-                    <div class="dropdown-menu dropdown-menu-right min-width-150" aria-labelledby="page-header-user-dropdown">
-                        <a class="dropdown-item" href="be_pages_generic_profile.html">
-                            <i class="si si-user mr-5"></i> Profile
-                        </a>
-                        <a class="dropdown-item d-flex align-items-center justify-content-between" href="be_pages_generic_inbox.html">
-                            <span><i class="si si-envelope-open mr-5"></i> Inbox</span>
-                            <span class="badge badge-primary">3</span>
-                        </a>
-                        <a class="dropdown-item" href="be_pages_generic_invoice.html">
-                            <i class="si si-note mr-5"></i> Invoices
-                        </a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="javascript:void(0)" data-toggle="layout" data-action="side_overlay_toggle">
-                            <i class="si si-wrench mr-5"></i> Settings
-                        </a>
-
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="op_auth_signin.html">
-                            <i class="si si-logout mr-5"></i> Sign Out
-                        </a>
+                </div>
+                <div class="content-header-section">
+                    <div class="btn-group" role="group">
+                        <button type="button" class="btn btn-rounded btn-dual-secondary" id="page-header-user-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-angle-down ml-5"></i>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-right min-width-150" aria-labelledby="page-header-user-dropdown">
+                            <a class="dropdown-item" href="be_pages_generic_profile.html">
+                                <i class="si si-user mr-5"></i> Profile
+                            </a>
+                            <a class="dropdown-item d-flex align-items-center justify-content-between" href="be_pages_generic_inbox.html">
+                                <span><i class="si si-envelope-open mr-5"></i> Inbox</span>
+                                <span class="badge badge-primary">3</span>
+                            </a>
+                            <a class="dropdown-item" href="be_pages_generic_invoice.html">
+                                <i class="si si-note mr-5"></i> Invoices
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="javascript:void(0)" data-toggle="layout" data-action="side_overlay_toggle">
+                                <i class="si si-wrench mr-5"></i> Settings
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="op_auth_signin.html">
+                                <i class="si si-logout mr-5"></i> Sign Out
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-
-        <div id="page-header-loader" class="overlay-header bg-primary">
-            <div class="content-header content-header-fullrow text-center">
-                <div class="content-header-item">
-                    <i class="fa fa-sun-o fa-spin text-white"></i>
+            <div id="page-header-loader" class="overlay-header bg-primary">
+                <div class="content-header content-header-fullrow text-center">
+                    <div class="content-header-item">
+                        <i class="fa fa-sun-o fa-spin text-white"></i>
+                    </div>
                 </div>
             </div>
-        </div>
-    </header>
-    <main id="main-container">
-        {% block content %}{% endblock %}
-    </main>
-    <footer id="page-footer" class="opacity-0">
-        <div class="content py-20 font-size-xs clearfix">
-            <div class="float-right">
-                Crafted with <i class="fa fa-heart text-pulse"></i> by <a class="font-w600" href="http://goo.gl/vNS3I" target="_blank">pixelcave</a>
+        </header>
+        <main id="main-container">
+            {% block content %}{% endblock %}
+        </main>
+        <footer id="page-footer" class="opacity-0">
+            <div class="content py-20 font-size-xs clearfix">
+                <div class="float-right">
+                    Crafted with <i class="fa fa-heart text-pulse"></i> in <a href="#">Malang</a>
+                </div>
             </div>
-            <div class="float-left">
-                <a class="font-w600" href="https://goo.gl/po9Usv" target="_blank">Codebase 1.3</a> &copy; <span class="js-year-copy">2017</span>
-            </div>
-        </div>
-    </footer>
-</div>
-
-<script src="{{ asset('assets/js/core/jquery.min.js') }}"></script>
-<script src="{{ asset('assets/js/core/popper.min.js') }}"></script>
-<script src="{{ asset('assets/js/core/bootstrap.min.js') }}"></script>
-<script src="{{ asset('assets/js/core/jquery.slimscroll.min.js') }}"></script>
-<script src="{{ asset('assets/js/core/jquery.scrollLock.min.js') }}"></script>
-<script src="{{ asset('assets/js/core/jquery.appear.min.js') }}"></script>
-<script src="{{ asset('assets/js/core/jquery.countTo.min.js') }}"></script>
-<script src="{{ asset('assets/js/core/js.cookie.min.js') }}"></script>
-<script src="{{ asset('assets/js/codebase.js') }}"></script>
-
-<!-- Page JS Plugins -->
-<script src="{{ asset('assets/js/plugins/chartjs/Chart.bundle.min.js') }}"></script>
-{% block pluginJS %}{% endblock %}
-
-<!-- Page JS Code -->
-<script src="{{ asset('assets/js/pages/be_pages_dashboard.js') }}"></script>
-{% block customJS %}{% endblock %}
+        </footer>
+    </div>
+    <script src="{{ asset('assets/js/core/jquery.min.js') }}"></script>
+    <script src="{{ asset('assets/js/core/popper.min.js') }}"></script>
+    <script src="{{ asset('assets/js/core/bootstrap.min.js') }}"></script>
+    <script src="{{ asset('assets/js/core/jquery.slimscroll.min.js') }}"></script>
+    <script src="{{ asset('assets/js/core/jquery.scrollLock.min.js') }}"></script>
+    <script src="{{ asset('assets/js/core/jquery.appear.min.js') }}"></script>
+    <script src="{{ asset('assets/js/core/jquery.countTo.min.js') }}"></script>
+    <script src="{{ asset('assets/js/core/js.cookie.min.js') }}"></script>
+    <script src="{{ asset('assets/js/codebase.js') }}"></script>
+    <!-- Page JS Plugins -->
+    <script src="{{ asset('assets/js/plugins/chartjs/Chart.bundle.min.js') }}"></script>
+    {% block pluginJS %}{% endblock %}
+    <!-- Page JS Code -->
+    <script src="{{ asset('assets/js/pages/be_pages_dashboard.js') }}"></script>
+    {% block customJS %}{% endblock %}
 </body>
 </html>
